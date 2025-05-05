@@ -31,16 +31,16 @@
 
 <body>
 
-  <section id="features">
     <div class="container">
       <h1>HelloWorld</h1>
       <% products.map((product)=>{ %>
-        <h4><%=product.productTitle %></h4>
+        <h4>
+          <a href="/products/<%=product.id%>"><%=product.productTitle %></a>
+        </h4>
         <p><%=product.productDescription%></p>
         <p>Price : <%=product.productPrice%></p>
       <%})%>
     </div>
-  </section>
 
   <!-- Start Footer Area -->
   <footer class="footer-area footer-eleven">
